@@ -1,0 +1,35 @@
+﻿:root {
+  --primary: #6c63ff;
+  --primary-light: #a89cff;
+  --primary-dark: #4b44cc;
+  --secondary: #00d9a6;
+  --bg: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-card-hover: #1a1a26;
+  --text-primary: #f0f0ff;
+  --text-secondary: #9999bb;
+  --text-muted: #55556a;
+  --border: #1e1e30;
+  --border-hover: #6c63ff55;
+  --font-main: "Inter", sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --transition: all 0.3s ease;
+  --shadow: 0 4px 24px rgba(108, 99, 255, 0.08);
+  --shadow-hover: 0 8px 40px rgba(108, 99, 255, 0.2);
+}
+
+[data-theme="light"] {
+  --bg: #f5f5ff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #efefff;
+  --text-primary: #0a0a1a;
+  --text-secondary: #444466;
+  --text-muted: #9999aa;
+  --border: #e0e0f0;
+  --border-hover: #6c63ff55;
+  --shadow: 0 4px 24px rgba(108, 99, 255, 0.1);
+  --shadow-hover: 0 8px 40px rgba(108, 99, 255, 0.18);
+}
