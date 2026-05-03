@@ -90,3 +90,135 @@ section { padding: 100px 0; }
   background: var(--bg);
   color: var(--text-primary);
 }
+
+@media (max-width: 768px) {
+  .section-title,
+  .section-subtitle {
+    text-align: center;
+  }
+
+  .about__content p,
+  .about__content .about__info {
+    text-align: left;
+  }
+
+  .stats__grid {
+    justify-items: center;
+  }
+
+  .skill-group__tags,
+  .project-card__tags,
+  .service-card__tags,
+  .blog-card__tags,
+  .cert-card-back__skills {
+    justify-content: center;
+  }
+
+  .hero__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__desc {
+    text-align: center;
+  }
+
+  .hero__role-wrap {
+    justify-content: center;
+  }
+
+  .hero__badge-row {
+    justify-content: center;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__social {
+    justify-content: center;
+  }
+
+  .hero__stats-row {
+    justify-content: center;
+  }
+
+  .hero__greeting {
+    text-align: center;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline-item__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .research__list .paper-card {
+    flex-direction: column;
+  }
+
+  .contact__info h3,
+  .contact__info p {
+    text-align: center;
+  }
+
+  .contact__links {
+    align-items: center;
+  }
+
+  .contact__link {
+    justify-content: center;
+  }
+
+  .github__profile {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .github__info {
+    text-align: center;
+  }
+
+  .github__link {
+    justify-content: center;
+  }
+
+  .github__stats {
+    justify-content: center;
+  }
+
+  .footer__links {
+    justify-content: center;
+  }
+
+  .services__cta {
+    text-align: center;
+  }
+
+  .blog-card {
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-card__meta {
+    justify-content: center;
+  }
+
+  .blog-card__link {
+    justify-content: center;
+  }
+
+  .cert-grid {
+    justify-items: center;
+  }
+
+  .experience__section .section-title,
+  .certifications__section .section-title,
+  .blog__section .section-title {
+    text-align: center;
+  }
+}
