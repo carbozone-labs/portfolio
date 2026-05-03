@@ -1,4 +1,4 @@
-﻿import "./Certifications.css";
+import "./Certifications.css";
 
 export default function CertCard({ name, issuer, date, skills, color, emoji, image, desc }) {
   return (

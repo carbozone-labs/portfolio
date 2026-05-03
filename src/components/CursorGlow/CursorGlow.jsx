@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./CursorGlow.css";
 
 export default function CursorGlow() {

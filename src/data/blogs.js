@@ -1,4 +1,4 @@
-﻿export const blogs = [
+export const blogs = [
   {
     title: "How I Published My First IEEE Research Paper",
     excerpt: "My journey from idea to publication — research methodology, paper structure, submission process, and lessons learned from getting published at ICAMIDA 2025.",

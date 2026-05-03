@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import Loader         from "./components/Loader/Loader";
 import Navbar         from "./components/Navbar/Navbar";
 import Hero           from "./components/Hero/Hero";

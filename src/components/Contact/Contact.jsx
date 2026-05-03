@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiMail, FiLinkedin, FiGithub, FiMapPin, FiSend, FiCheck, FiAlertCircle } from "react-icons/fi";
 import emailjs from "@emailjs/browser";

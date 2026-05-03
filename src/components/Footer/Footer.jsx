@@ -1,4 +1,4 @@
-﻿import "./Footer.css";
+import "./Footer.css";
 
 const nav = ["about","skills","projects","research","experience","certifications","contact"];
 

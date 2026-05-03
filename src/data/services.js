@@ -1,4 +1,4 @@
-﻿export const services = [
+export const services = [
   {
     icon: "🤖",
     title: "ML Model Development",

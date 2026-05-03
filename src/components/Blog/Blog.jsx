@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { blogs } from "../../data/blogs";
 import { FiArrowRight, FiClock, FiCalendar } from "react-icons/fi";
 import "./Blog.css";

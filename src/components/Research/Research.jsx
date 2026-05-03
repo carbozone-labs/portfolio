@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PaperCard from "./PaperCard";
 import { papers } from "../../data/research";

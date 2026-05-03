@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import CertCard from "./CertCard";
 import { certifications } from "../../data/certifications";
 import "./Certifications.css";

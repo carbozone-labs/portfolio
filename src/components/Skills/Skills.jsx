@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 import SkillsRadar from "../SkillsRadar/SkillsRadar";
 import { skills } from "../../data/skills";

@@ -1,4 +1,4 @@
-﻿export const certifications = [
+export const certifications = [
   {
     name: "AI and Big Data in IoT",
     issuer: "Great Learning",

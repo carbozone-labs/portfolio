@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useScrollSpy } from "../../hooks/useScrollSpy";
 import { useDarkMode } from "../../hooks/useDarkMode";
 import { FiSun, FiMoon } from "react-icons/fi";
