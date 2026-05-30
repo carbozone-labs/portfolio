@@ -4,7 +4,6 @@ import "./Stats.css";
 
 const stats = [
   { number: 2,  suffix: "+", label: "Published Papers", icon: "📄" },
-  { number: 4,  suffix: "+", label: "Conferences",       icon: "🎤" },
   { number: 5,  suffix: "+", label: "Projects Built",    icon: "🚀" },
   { number: 8,  suffix: "+", label: "Certifications",    icon: "🏆" },
   { number: 3,  suffix: "+", label: "Communities",       icon: "🤝" },
