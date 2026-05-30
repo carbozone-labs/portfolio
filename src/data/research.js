@@ -27,11 +27,5 @@ export const papers = [
     doi: "",
     status: "presented",
   },
-  {
-    title: "Privacy-Preserving Continual Learning in Medical AI for Cardiovascular Disease Prediction",
-    conference: "Ongoing Research",
-    date: "2025",
-    doi: "",
-    status: "ongoing",
-  },
+  
 ];
