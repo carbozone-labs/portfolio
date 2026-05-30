@@ -15,17 +15,16 @@ export const papers = [
   },
   {
     title: "Comparative Analysis of Clustering Algorithms: K-Means, DBSCAN, and Agglomerative Clustering",
-    conference: "ICORMI 2025 — ASM's IBMR",
+    conference: "ICORMI 2025 — ASM IBMR",
     date: "January 2025",
     doi: "",
     status: "presented",
   },
   {
     title: "Leveraging Machine Learning for Customer Segmentation to Enhance Marketing Strategies",
-    conference: "ICORMI 2025 — ASM's IBMR",
+    conference: "ICORMI 2025 — ASM IBMR",
     date: "January 2025",
     doi: "",
     status: "presented",
   },
-  
 ];
