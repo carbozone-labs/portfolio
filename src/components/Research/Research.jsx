@@ -27,7 +27,7 @@ export default function Research() {
               onClick={() => setSelected(p)}
               style={{ cursor: "pointer" }}
             >
-              <PaperCard {...p} index={i} />
+              <PaperCard {...p} />
             </motion.div>
           ))}
         </div>
@@ -57,7 +57,7 @@ export default function Research() {
               <div className="paper-modal__divider" />
               <div className="paper-modal__section">
                 <h4>About this Research</h4>
-                <p>{selected.about || "This research was presented/published at an international conference. Click the link below to read the full paper."}</p>
+                <p>{selected.about || "Click the link below to read the full paper."}</p>
               </div>
               {selected.doi && (
                 <a href={selected.doi} target="_blank" rel="noreferrer" className="paper-modal__link">

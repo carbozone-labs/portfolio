@@ -1,9 +1,8 @@
-import { FiExternalLink } from 'react-icons/fi';
+import { FiExternalLink } from "react-icons/fi";
 
-export default function PaperCard({ title, conference, date, doi, status, index }) {
+export default function PaperCard({ title, conference, date, doi, status }) {
   return (
     <div className="paper-card">
-      <span className="paper-card__index">0{index + 1}</span>
       <div className="paper-card__body">
         <h3 className="paper-card__title">{title}</h3>
         <div className="paper-card__meta">
