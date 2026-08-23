@@ -1,0 +1,39 @@
+#now-learning { padding: 20px 0; }
+
+.now-learning__box {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px 28px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.now-learning__label {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.now-learning__topics {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.now-learning__topic {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--secondary);
+  border: 1px solid var(--glass-border);
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: var(--glass-bg);
+}
+
+@media (max-width: 600px) {
+  .now-learning__box { flex-direction: column; text-align: center; padding: 18px; }
+}
