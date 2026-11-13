@@ -1,8 +1,7 @@
-import { useState, useEffect, Suspense, lazy } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
-import Loader     from "./components/Loader/Loader";
-import Navbar     from "./components/Navbar/Navbar";
-import Footer     from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const HomePage       = lazy(() => import("./pages/HomePage"));
 const ProjectsPage   = lazy(() => import("./pages/ProjectsPage"));
@@ -20,30 +19,23 @@ function ScrollToTop() {
 }
 
 function App() {
-  const [loaded, setLoaded] = useState(false);
-
   return (
     <HashRouter>
-      {!loaded && <Loader onDone={() => setLoaded(true)} />}
-      {loaded && (
-        <>
-          <ScrollToTop />
-          <Navbar />
-          <main style={{ position: "relative", zIndex: 1 }}>
-            <Suspense fallback={<div style={{ minHeight: "60vh" }} />}>
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/projects" element={<ProjectsPage />} />
-                <Route path="/research" element={<ResearchPage />} />
-                <Route path="/experience" element={<ExperiencePage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="*" element={<NotFoundPage />} />
-              </Routes>
-            </Suspense>
-          </main>
-          <Footer />
-        </>
-      )}
+      <ScrollToTop />
+      <Navbar />
+      <main style={{ position: "relative", zIndex: 1 }}>
+        <Suspense fallback={<div style={{ minHeight: "60vh" }} />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/research" element={<ResearchPage />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
     </HashRouter>
   );
 }
