@@ -30,7 +30,7 @@ export default function Footer() {
           <a href="mailto:atharvekavire01@gmail.com" title="Email"><FiMail /></a>
         </div>
         <p className="footer__copy">
-          © 2025 <span>Atharv Ekavire</span>. Built with React & ❤️
+          All Rights Reserved (c) 2026 <span>Atharv Ekavire</span> <span style={{ color: "#ff5c7a" }}>&#10084;&#65039;</span>
         </p>
       </div>
     </footer>

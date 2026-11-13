@@ -30,7 +30,7 @@ export default function About() {
               <p>M.Sc. Computer Science · Pune, India</p>
               <div className="about__stats">
                 <div className="about__stat">
-                  <div className="about__stat-number">2+</div>
+                  <div className="about__stat-number">3+</div>
                   <div className="about__stat-label">Published Papers</div>
                 </div>
                 <div className="about__stat">
@@ -63,7 +63,7 @@ export default function About() {
             </p>
             <p>
               My research has been published in IEEE and Springer conferences, covering topics
-              like cancer prediction, clustering algorithms, and customer segmentation.
+              like cancer prediction, malware detection, clustering algorithms, and customer segmentation.
               I'm currently exploring privacy-preserving continual learning in medical AI.
             </p>
             <p>

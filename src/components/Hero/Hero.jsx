@@ -149,7 +149,7 @@ export default function Hero() {
           >
             M.Sc. Computer Science student at Vishwakarma College, Pune.
             Building intelligent systems through ML, AI research, and cloud computing.
-            <span className="hero__highlight"> 2x IEEE/Springer published researcher.</span>
+            <span className="hero__highlight"> 3x IEEE/Springer published researcher.</span>
           </motion.p>
 
           <motion.div
@@ -158,7 +158,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            {[["2+","Papers Published"],["5+","Projects Built"],["8+","Certifications"]].map(([num, label]) => (
+            {[["3+","Papers Published"],["5+","Projects Built"],["8+","Certifications"]].map(([num, label]) => (
               <div key={label} className="hero__mini-stat">
                 <span className="hero__mini-num">{num}</span>
                 <span className="hero__mini-label">{label}</span>

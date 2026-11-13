@@ -42,7 +42,7 @@ export default function Loader({ onDone }) {
             <div className="loader__dots">
               {steps.map((text, i) => (
                 <motion.span key={text} className="loader__dot-text" initial={{ opacity: 0 }} animate={{ opacity: progress > i * 25 ? 1 : 0.2 }} transition={{ duration: 0.3 }}>
-                  {progress > i * 25 ? "✓" : "○"} {text}
+                  {progress > i * 25 ? "Ã¢Å“â€œ" : "Ã¢â€”â€¹"} {text}
                 </motion.span>
               ))}
             </div>

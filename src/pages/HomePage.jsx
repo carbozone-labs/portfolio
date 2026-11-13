@@ -12,7 +12,7 @@ export default function HomePage() {
       <About />
       <NowLearning />
       <Skills />
-      <Projects limit={3} showViewAll title="Featured Projects" subtitle="— a few things I've built" />
+      <Projects limit={3} showViewAll title="Featured Projects" subtitle="â€” a few things I've built" />
       <ContactCTA />
     </>
   );

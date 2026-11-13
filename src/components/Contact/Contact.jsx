@@ -11,7 +11,7 @@ const PUBLIC_KEY = "tbUFff-_JGpk4kxvx";
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [status, setStatus] = useState("idle");
-
+  
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
@@ -43,7 +43,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="section-subtitle">— get in touch</p>
+          <p className="section-subtitle">Ã¢â‚¬â€ get in touch</p>
           <h2 className="section-title">Contact</h2>
         </motion.div>
 
@@ -58,10 +58,10 @@ export default function Contact() {
             <h3>Let us work together</h3>
             <p>Open to research collaborations, ML projects, internships, and exciting opportunities. Drop me a message!</p>
             <div className="contact__links">
-              <a href="mailto:atharvekavire01@gmail.com" className="contact__link">
+              <button type="button" className="contact__link contact__link-btn" onClick={() => setEmailRevealed(true)}>
                 <span className="contact__link-icon"><FiMail /></span>
-                atharvekavire01@gmail.com
-              </a>
+                {emailRevealed ? "atharvekavire01@gmail.com" : "[ Encrypted \_\_ click to decrypt ]"}
+              </button>
               <a href="https://www.linkedin.com/in/atharv-ekvire/" target="_blank" rel="noreferrer" className="contact__link">
                 <span className="contact__link-icon"><FiLinkedin /></span>
                 linkedin.com/in/atharv-ekvire

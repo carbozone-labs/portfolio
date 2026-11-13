@@ -1,5 +1,13 @@
 export const papers = [
   {
+    title: "DeepGuard: Explainable Behavioral Malware Detection Using Hybrid CNN-BiLSTM-Attention Deep Learning on Dynamic API Call Sequences",
+    conference: "ICCUBEA 2026 — IEEE",
+    date: "August 2026",
+    doi: "https://doi.org/10.1109/ICCUBEA69821.2026.11701853",
+    status: "published",
+    about: "DeepGuard is an explainable behavioral malware detection framework that analyzes dynamic API call sequences using a hybrid CNN-BiLSTM-Attention architecture. It applies SMOTE to handle class imbalance and SHAP to explain which API behaviors drive a malicious prediction, reaching 98.88% accuracy and 99.43% F1-score. Published at the 10th International Conference on Computing, Communication, Control and Automation (ICCUBEA 2026), Pune.",
+  },
+  {
     title: "A Comprehensive Analysis of Lung Cancer Prediction Using Machine Learning Models",
     conference: "ICAIO 2025 — Springer",
     date: "October 2025",

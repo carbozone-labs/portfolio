@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect, Suspense, lazy } from "react";
 import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import Loader     from "./components/Loader/Loader";
 import Navbar     from "./components/Navbar/Navbar";
 import Footer     from "./components/Footer/Footer";
-import HomePage       from "./pages/HomePage";
-import ProjectsPage   from "./pages/ProjectsPage";
-import ResearchPage   from "./pages/ResearchPage";
-import ExperiencePage from "./pages/ExperiencePage";
-import ContactPage    from "./pages/ContactPage";
+
+const HomePage       = lazy(() => import("./pages/HomePage"));
+const ProjectsPage   = lazy(() => import("./pages/ProjectsPage"));
+const ResearchPage   = lazy(() => import("./pages/ResearchPage"));
+const ExperiencePage = lazy(() => import("./pages/ExperiencePage"));
+const ContactPage    = lazy(() => import("./pages/ContactPage"));
+const NotFoundPage   = lazy(() => import("./pages/NotFoundPage"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -19,7 +20,7 @@ function ScrollToTop() {
 }
 
 function App() {
-  const loaded = true;
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <HashRouter>
@@ -29,13 +30,16 @@ function App() {
           <ScrollToTop />
           <Navbar />
           <main style={{ position: "relative", zIndex: 1 }}>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/research" element={<ResearchPage />} />
-              <Route path="/experience" element={<ExperiencePage />} />
-              <Route path="/contact" element={<ContactPage />} />
-            </Routes>
+            <Suspense fallback={<div style={{ minHeight: "60vh" }} />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/research" element={<ResearchPage />} />
+                <Route path="/experience" element={<ExperiencePage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </Suspense>
           </main>
           <Footer />
         </>
