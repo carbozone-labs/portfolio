@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DMbYRYqz.js";import{t}from"./GitHub-BwJERRJ3.js";import{t as n}from"./Projects-NgBqaTa2.js";var r=e();function i(){return(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(n,{}),(0,r.jsx)(t,{})]})}export{i as default};
